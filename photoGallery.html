@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>   
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <title>Photo Gallery</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+        
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="AboutMe.html">About Me</a></li>
+                    <li><a href="photoGallery.html">Photo Gallery</a></li>
+                </ul>  
+            </nav>
+        </div>
+        <h1 id="Home"><center>Photo Gallery</center></h1>
+        <hr>
+    
+        
+    </header>
+
+    <button style="background-color: #55d6aa;" onclick="gfg_Run()"> 
+        teal & dark gray
+    </button>
+    <button style="background-color: #E6A41F;" onclick="gfg_Run1()"> 
+        orange & gray
+    </button>
+    <button style="background-color: #2594BC;" onclick="gfg_Run2()"> 
+        blue & light gray
+    </button>
+  
+    <script>
+        
+        
+                  
+        function changebgColor(color) {
+            document.body.style.background = color;
+        }
+
+          
+        function gfg_Run() {
+            changebgColor('#222');    
+        }   
+        function gfg_Run1() {
+            changebgColor('#E6A41F');
+        }      
+        function gfg_Run2() {
+            changebgColor('#2594BC');
+        }   
+    </script>
+
+    <main></main>
+
+        <div class="m-p-g">
+            <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+                <img src="IMG_1086.JPG" alt="img of my family" data-full="IMG_1086.JPG" class="m-p-g__thumbs-img" />
+                <img src="IMG_4486.JPG" alt="img of my soccer teamy" data-full="IMG_4486.JPG" class="m-p-g__thumbs-img" />
+                <img src="IMG_9766.JPG" alt="img of my family" data-full="IMG_9766.JPG" class="m-p-g__thumbs-img" />
+                <img src="IMG_2925 3.JPG" alt="img of camping" data-full="IMG_2925 3.JPG" class="m-p-g__thumbs-img" />
+                <img src="1824F06F-212D-4879-9AD5-6C0B44FD92AC_1_105_c.jpeg" alt="img of art" data-full="1824F06F-212D-4879-9AD5-6C0B44FD92AC_1_105_c.jpeg" class="m-p-g__thumbs-img" />
+                <img src="FACC9462-2016-4051-B666-B7D56650CF94_1_105_c.jpeg" alt="img of snowmobile" data-full="FACC9462-2016-4051-B666-B7D56650CF94_1_105_c.jpeg" class="m-p-g__thumbs-img" />
+                <img src="BD2C001A-796E-4B4C-AA70-AABBA73D4CB2_1_105_c.jpeg" alt="img of my team" data-full="BD2C001A-796E-4B4C-AA70-AABBA73D4CB2_1_105_c.jpeg" class="m-p-g__thumbs-img" />
+                <img src="C65A89F2-4928-481A-910A-CEF1210020AF_1_105_c.jpeg" alt="img of nature" data-full="C65A89F2-4928-481A-910A-CEF1210020AF_1_105_c.jpeg" class="m-p-g__thumbs-img" />
+                <img src="D5A9571D-C424-4163-B8F3-C3FE6FE01B29_1_105_c.jpeg" alt="img of my family" data-full="D5A9571D-C424-4163-B8F3-C3FE6FE01B29_1_105_c.jpeg" class="m-p-g__thumbs-img" />
+            </div>
+
+            <div class="m-p-g__fullscreen"></div>
+        </div>
+
+        <script>
+            var elem = document.querySelector('.m-p-g');
+
+            document.addEventListener('DOMContentLoaded', function() {
+                var gallery = new MaterialPhotoGallery(elem);
+            });
+        </script>
+        <!-- partial -->
+        <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js'></script>
+
+
+    </main>
+
+
+    
+    
+  
+
+
+
+
+</html>

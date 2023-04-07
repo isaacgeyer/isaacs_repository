@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>   
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <title>Isaac Geyer</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="AboutMe.html">About Me</a></li>
+                    <li><a href="photoGallery.html">Photo Gallery</a></li>
+                </ul>  
+            </nav>
+        </div>
+    </header>
+
+    <button style="background-color: #55d6aa;" onclick="gfg_Run()"> 
+        teal & dark gray
+    </button>
+    <button style="background-color: #E6A41F;" onclick="gfg_Run1()"> 
+        orange & gray
+    </button>
+    <button style="background-color: #2594BC;" onclick="gfg_Run2()"> 
+        blue & light gray
+    </button>
+  
+    <script>
+        
+        
+                  
+        function changebgColor(color) {
+            document.body.style.background = color;
+        }
+
+          
+        function gfg_Run() {
+            changebgColor('#222');    
+        }   
+        function gfg_Run1() {
+            changebgColor('#E6A41F');
+        }      
+        function gfg_Run2() {
+            changebgColor('#2594BC');
+        }   
+    </script>
+
+
+
+<!-- #55d6aa
+#222
+#010101
+
+#E6A41F
+#8E8A81
+#FEFEFE
+
+#2594BC
+#ACB3B6 -->
+
+<div class="wrapper">
+        <article class="header">
+            <h1 class="flex">About Me</h1>
+        </article>
+        <article class="main">
+            <p class="flex">
+                Hi, my name is Isaac Geyer. I'm a student athlete on the mens soccer team studying computer science in my first year at Dalhousie Univeristy.</p>
+        </article>
+        <aside class="aside aside1">
+            <h2 class="flex">My Hobbies</h2>
+            <p class="flex">My hobbies include playing soccer, working out, programming, reading, hiking, camping, biking, saunaing, cold plunging, investing, geography, entrepeneurship, business, listeneing to music and podcasts, architecture, food, weather/temperature trends and cross country.</p>
+        </aside>
+        <aside class="aside aside2">
+            <h2 class="flex">My Goals</h2>
+            <p class="flex">My goals include becoming an academic all canadian, getting on the AUS all star second team, growing my investment portfolio to 10,000$, and starting a business.</p>
+        </aside>
+        <footer class="footer">
+            <h3 class="flex">Enter name and age to find out what age category your in:</h3>
+            <script>
+                function myfun(){
+                    var name=document.getElementById('name').value;
+                    var age=document.getElementById('age').value; 
+                    /*conditional statement*/
+                    if (age > 0 && age <= 12) { 
+                        alert("Welcome to my website " + name + "." + "\nYou are a child.");
+                    }
+                    else if(age > 12 && age <= 19) {
+                        alert("Welcome to my website " + name + "." + "\nYou are a teenager.");
+                    }
+                    else if(age > 19 && age <= 64) {
+                        alert("Welcome to my website " + name + "." + "\nYou are an adult.");
+                    }
+                    else if(age > 64 && age <= 115) {
+                        alert("Welcome to my website " + name + "." + "\nYou are a senior.");
+                    }
+                    else{
+                        alert("Welcome to my website " + name + "." + "\nPlease enter a valid age.");
+                    }
+                }
+            </script>
+            <form class="input">
+                <label for="name">Enter Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="age">Enter Age:</label>
+                <input type="number" id="age" name="age">
+                <input type="button" value="Submit" onclick="myfun()">
+            </form>
+        </footer>
+    </div>
+</body>
+
+
+</html>
